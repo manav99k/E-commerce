@@ -1,0 +1,12 @@
+.sign-in-and-sign-up {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #fff;
+    }
+}
