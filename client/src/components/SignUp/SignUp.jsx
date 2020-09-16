@@ -5,7 +5,7 @@ import CustomButton from '../CustomButton/CustomButton';
 
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
-import './SignUp.scss';
+import { SignUpContainer, SignUpTitle } from './SignUp.styles';
 
 const SignUp = () => {
 	const [
@@ -73,8 +73,8 @@ const SignUp = () => {
 	};
 
 	return (
-		<div className="sign-up">
-			<h2 className="title">I do not have an account</h2>
+		<SignUpContainer>
+			<SignUpTitle>I do not have an account</SignUpTitle>
 			<span>Sign Up with your email and password</span>
 			<form className="sign-up-form" onSubmit={handleSubmit}>
 				<FormInput
@@ -111,7 +111,7 @@ const SignUp = () => {
 				/>
 				<CustomButton type="submit">Sign Up</CustomButton>
 			</form>
-		</div>
+		</SignUpContainer>
 	);
 };
 

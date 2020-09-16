@@ -1,7 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
-const vibecheck = true;
 const config = {
 	apiKey            : 'AIzaSyBHLgjysv-oMOgI7lF6QTjl91FYtbvLosc',
 	authDomain        : 'crown-db-df949.firebaseapp.com',
