@@ -3,6 +3,13 @@
     width: 80%;
     justify-content: space-between;
     margin: 30px auto;
+
+    @media screen and (max-width: 800px) {
+        align-items: center;
+        width: 90%;
+        flex-direction: column;
+    }
+
 }
 
 @media (prefers-color-scheme: dark) {

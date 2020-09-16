@@ -18,6 +18,10 @@ const GoogleSignInStyles = css`
 		background-color: #357ae8;
 		border: none;
 	}
+	@media screen and (max-width: 800px) {
+		padding: 0;
+		display: block;
+	}
 `;
 
 const InvertedSignInStyles = css`
