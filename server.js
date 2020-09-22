@@ -23,6 +23,10 @@ if (process.env.NODE_ENV === 'production') {
 	});
 }
 
+app.get('/serviceWorker.js', (req, res) => {
+	res.sendFile(path.resolve(__dirname, '..', 'build', 'serviceWorker.js'));
+});
+
 app.listen(port, (error) => {
 	if (error) throw error;
 	console.log('Server running on port ' + port);
